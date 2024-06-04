@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 10px double black;
+            background-color: lightblue;
+            margin: auto;
+            padding: 10px;
+            font-size: 23px;
+            width: 900px;
+        }
+
+        .Form {
+            font-size: 30px;
+        }
+
+        .Form input {
+            font-size: 20px;
+        }
+
+        .Form select {
+            font-size: 20px;
+        }
+
+        button {
+            box-shadow: 1px 2px 3px 2px darkred;
+            height: 1cm;
+            width: 20%;
+            border-radius: 5px;
+            background-color: brown;
+            color: white;
+            font-size: medium;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post" autocomplete="off">
+        <div class="container">
+            <div class="Form">
+                <h1>Job Application Form</h1>
+                <hr>
+                <p>Thank you for your interest in working with us. Please check below for available job oppertunities
+                    that meet your criteria and send your application by filing out the Job Application Form.</p>
+
+                <br>
+                <br>
+                <label for="Name">Name</label>
+                <br>
+
+                <input type="text" id="Name" name="First_name" placeholder="First Name" required>
+                <input type="text" id="name" name="Last_name" placeholder="Last Name" required>
+                <br><br>
+
+                <label for="Email">Email</label>
+                <br>
+
+                <input type="email" id="Email" name="Email" placeholder="john.doe@example.com" required>
+                <br><br>
+
+                <label for="content">What position are you applying for?</label>
+                <br>
+                <select name="content" id="content" name="position" required>
+                    <option value="" hidden></option>
+                    <option value="other">other</option>
+                    <option value="Accountant">Accountant</option>
+                    <option value="Full stack Devloper">Full stack Devloper</option>
+                    <option value="Front-end Devloper">Front-end Devloper</option>
+                    <option value="Back-end Devloper">Back-end Devloper</option>
+                    <option value="Ui/Ux Designer">Ui/Ux Designer</option>
+                </select>
+                <br><br>
+
+                <label for="date">Available date</label>
+                <br>
+                <input type="date" id="date" name="date" required>
+
+                <br><br>
+
+
+                <label for="status">What is your current employee status?</label>
+                <br><br>
+                <label for="">Employed</label>
+                <input type="radio" id="status" name="employee_status" value="Employed">
+
+                <label for="">Self-Employed</label>
+                <input type="radio" id="status" name="employee_status" value="Self-Employed">
+
+                <label for="">Unemployed</label>
+                <input type="radio" id="status" name="employee_status" value="Unemployed">
+
+                <label for="">Student</label>
+                <input type="radio" id="status" name="employee_status" value="Student">
+
+
+
+                <br><br>
+                <label for="link">Please provide your resume link</label>
+                <br>
+                <input type="link" name="link" id="link" placeholder="https://www.example.com/">
+
+                <br><br>
+                <label for="upload file">Please upload your resume</label>
+                <br>
+                <input type="file" name="file" id="upload file " placeholder="Resume" required>
+                <br><br>
+
+                <label for="fname">Do you have references?(optional)</label>
+                <br>
+                <input type="text" id="fname" name="Referance" placeholder="First Name">
+                <input type="text" id="fname" name="Referance" placeholder="Last Name">
+
+                <br><br>
+                <label for="remail">Referance email</label>
+                <br>
+                <input type="email" name="remail" id="remail" placeholder="john.doe@example.com">
+                <br><br><br>
+
+                <button>Reset</button>
+                <button>Apply</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
